@@ -1,0 +1,58 @@
+/* .contanit{
+	width:1200px;
+	height: 100px;
+	background: black;
+	margin:0 auto;
+}
+@media screen and(max-width:960px){
+	.contanit{
+		width: 800px;
+	}
+}
+@media screen and(max-width:650px){
+	.contanit{
+		width:100%;
+	}
+}
+.banner.row{
+	position: relative;
+	&::after{
+		content:'';
+		display: block;
+		clear:both;
+		line-height: 0;
+		height:0;
+	}
+}
+.col{
+    float:left;
+}
+$number:12;
+$lv:3000px;
+$mv:960px;
+$sv:650px;
+$lists:(
+	'l':$lv,
+	'm':$mv,
+	's':$sv
+	);
+@each $key in map_keys($lists){
+	@media screen and (max-width: map_get($lists,$key)){
+		@for $i from 1 through $number{
+		.col.#{$key}#{$i}{
+			width:percentage($i/$number);
+		  }
+	    }
+	}
+} 
+.banner .zuo, .banner .you{
+	height:300px;
+	border:1px solid #000;
+}
+.banner .zuo{
+	background: green;
+}
+.banner .you{
+	background:yellow;
+} */
+text-algin:justify; 
